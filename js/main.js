@@ -32,7 +32,7 @@ $(document).ready(function () {
 }
 
 // Example usage: user-selected date
-const userSelectedDate = '2024-12-01T00:00:00'; // Format: YYYY-MM-DDTHH:mm:ss
+const userSelectedDate = document.getElementById("eventdate").innerHTML; // Format: YYYY-MM-DDTHH:mm:ss
 countdownToDate(userSelectedDate);
 
   // Event slider js
