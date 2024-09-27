@@ -1,0 +1,1609 @@
+:root {
+    --primary-font: "Inter", sans-serif;
+    --secondary-font: "Antonio", sans-serif;
+    --main-heading-font: "Anton SC", sans-serif;
+    --text-color: rgb(88, 88, 88);
+    --yellow: rgb(202, 149, 69);
+    --light-pink: rgb(204, 64, 204);
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+}
+
+/* General CSS start */
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+strong,
+sub,
+sup,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    color: var(--black);
+    vertical-align: baseline;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+    height: auto;
+    vertical-align: middle;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    max-width: 100%;
+    display: block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::placeholder {
+    color: #999999;
+    opacity: 1
+}
+
+::-webkit-input-placeholder {
+    color: #999999;
+    opacity: 1;
+}
+
+:-moz-placeholder {
+    color: #999999;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #999999;
+    opacity: 1;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+:focus {
+    outline: none;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+select,
+textarea {
+    width: 100%;
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=submit],
+input[type=button] {
+    cursor: pointer;
+    border: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    display: inline-block;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    line-height: 130%;
+    color: var(--black);
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* General CSS end */
+
+.container {
+    max-width: 1535px;
+    width: 100%;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+h1,
+.h1 {
+    font-size: clamp(54px, 5vw, 96px);
+}
+
+h2,
+.h2 {
+    font-size: clamp(38px, 2.813vw, 54px);
+}
+
+h3,
+.h3 {
+    font-size: clamp(32px, 1.979vw, 44px);
+}
+
+h4,
+.h4 {
+    font-size: clamp(26px, 1.979vw, 38px);
+}
+
+h5,
+.h5 {
+    font-size: clamp(20px, 1.458vw, 28px);
+}
+
+h6,
+.h6 {
+    font-size: 24px;
+}
+
+.primary-btn,
+.secondary-btn {
+    font-family: var(--secondary-font);
+    font-size: clamp(24px, 1.875vw, 36px);
+    font-weight: 400;
+    line-height: 130%;
+    padding: 16px clamp(24px, 2.083vw, 40px);
+    border-radius: 10px;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.primary-btn,
+.secondary-btn:hover {
+    background-color: var(--yellow);
+}
+
+.secondary-btn,
+.primary-btn:hover {
+    background-color: var(--light-pink);
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.light-pink {
+    color: var(--light-pink);
+}
+
+.green {
+    color: #0c8e00 !important;
+}
+
+.red {
+    color: #c90000 !important;
+}
+
+/* Header section start */
+header {
+    padding: 24px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: 5px 10px 32px 0px rgba(38, 34, 35, 0.05);
+    z-index: 99;
+}
+
+.main-header .logo a {
+    display: block;
+}
+
+.main-header .logo img {
+    max-width: clamp(150px, 10.573vw, 203px);
+    height: auto;
+}
+
+.main-header nav ul,
+.main-header nav {
+    gap: clamp(50px, 5.052vw, 97px);
+}
+
+.main-header nav ul li a {
+    font-family: var(--secondary-font);
+    font-size: 31px;
+    font-weight: 300;
+    line-height: 130%;
+    color: var(--black);
+}
+
+.main-header nav ul li a:hover {
+    color: var(--yellow);
+}
+
+.main-header .custom-btn a {
+    background-color: var(--light-pink);
+    padding: 12px 21px;
+    color: var(--white);
+    border-radius: 10px;
+    font-family: var(--secondary-font);
+    font-size: 31px;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+.main-header .custom-btn a:hover {
+    background-color: var(--yellow);
+}
+
+.main-header .hamburger {
+    width: 30px;
+    height: 20px;
+}
+
+.main-header .hamburger span {
+    height: 4px;
+    background-color: var(--black);
+    border-radius: 6px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: all 0.3s;
+}
+
+.main-header .hamburger span:nth-child(1) {
+    top: 0;
+}
+
+.main-header .hamburger span:nth-child(2) {
+    top: 8px;
+}
+
+.main-header .hamburger span:nth-child(3) {
+    top: 16px;
+}
+
+/* Header section end */
+
+/* Banner section start */
+.banner {
+    padding: clamp(50px, 6.563vw, 126px) 0;
+    background-image: url('../images/banner-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner-inner .h1 {
+    background: linear-gradient(90deg, #CC9744 30%, #804180 50%, #CC40CC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--main-heading-font);
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.banner-inner .h4 {
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: clamp(36px, 2.604vw, 50px);
+}
+
+.banner-inner .h5 {
+    font-weight: 300;
+    color: var(--yellow);
+    margin-bottom: 28px;
+}
+
+.banner-inner .banner-btn {
+    gap: clamp(20px, 2.604vw, 50px);
+    margin-bottom: clamp(80px, 7.292vw, 140px);
+}
+
+.banner-inner .bottom-text p {
+    padding: 16px 20px;
+    background-color: rgba(217, 217, 217, 0.20);
+    font-size: clamp(16px, 1.094vw, 21px);
+    line-height: 160%;
+    border-radius: 10px;
+    color: var(--white);
+    max-width: clamp(600px, 53.333vw, 1024px);
+    margin: 0 auto;
+}
+
+.banner-inner #countdown {
+    margin-bottom: clamp(50px, 5.729vw, 110px);
+}
+
+.banner-inner #countdown ul {
+    display: flex;
+    gap: clamp(30px, 6.25vw, 120px);
+    justify-content: center;
+}
+
+.banner-inner #countdown ul li {
+    font-family: var(--secondary-font);
+    font-size: clamp(22px, 1.875vw, 36px);
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.banner-inner #countdown ul li span {
+    font-size: clamp(36px, 5vw, 96px);
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 130%;
+    display: block;
+}
+
+/* Banner section end */
+
+/* About section start */
+.about {
+    padding: clamp(50px, 6.563vw, 126px) 0;
+}
+
+.about .h2 {
+    margin-bottom: clamp(30px, 3.125vw, 60px);
+}
+
+.about-inner {
+    gap: 70px;
+}
+
+.about-inner .left-side {
+    max-width: 810px;
+    width: 56%;
+}
+
+.about-inner .left-side p {
+    max-width: 745px;
+    font-size: clamp(16px, 1.042vw, 20px);
+    line-height: 210%;
+    color: var(--text-color);
+    margin-bottom: clamp(40px, 3.125vw, 60px);
+}
+
+.about-inner .left-side p span {
+    font-weight: 700;
+}
+
+.about-inner .info-box {
+    gap: clamp(30px, 2.604vw, 50px);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-inner .info-box .box {
+    border: 1px solid #A9A9A9;
+    border-radius: 10px;
+    background-color: var(--black);
+    padding: 20px;
+    width: calc(50% - 25px);
+}
+
+.about-inner .info-box .box .h6 {
+    color: var(--white);
+    font-size: 20px;
+    line-height: 210%;
+    margin-bottom: 20px;
+}
+
+.about-inner .info-box .box ul li {
+    display: flex;
+    gap: clamp(16px, 1.563vw, 30px);
+    font-family: var(--primary-font);
+    font-size: clamp(17px, 1.042vw, 20px);
+    font-weight: 700;
+    line-height: 210%;
+    color: var(--yellow);
+    margin-bottom: 10px;
+}
+
+.about-inner .info-box .box ul li:last-child {
+    margin-bottom: 0;
+}
+
+.about-inner .right-side {
+    padding: 34px;
+}
+
+.about-inner .right-side .about-img {
+    position: relative;
+}
+
+.about-inner .right-side .about-img::before,
+.about-inner .right-side .about-img::after {
+    position: absolute;
+    content: '';
+    width: 220px;
+    height: 185px;
+    z-index: -1;
+}
+
+.about-inner .right-side .about-img::before {
+    background-color: var(--yellow);
+    right: -34px;
+    top: -34px;
+}
+
+.about-inner .right-side .about-img::after {
+    background-color: var(--light-pink);
+    bottom: -34px;
+    left: -34px;
+}
+
+.about-inner .right-side .about-img img {
+    max-width: 551px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* About section end */
+
+/* Seating Chart start */
+.seating-chart {
+    background-color: rgba(248, 242, 232, 1);
+    padding: clamp(50px, 4.688vw, 90px) 0;
+}
+
+.seating-chart .h2 {
+    text-align: center;
+    margin-bottom: clamp(42px, 5.208vw, 100px);
+}
+
+.seating-chart .chart-inner {
+    max-width: 731px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Seating Chart end */
+
+/* Upcoming events section start */
+.upcoming-events {
+    padding: clamp(50px, 8.125vw, 156px) 0 clamp(50px, 4.688vw, 90px);
+    position: relative;
+    z-index: 1;
+}
+
+.upcoming-events::before {
+    position: absolute;
+    content: '';
+    background: linear-gradient(0deg, #CA9545, #CA9545);
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 50%;
+    z-index: -1;
+}
+
+.upcoming-events .h2 {
+    color: var(--white);
+    padding-left: 20px;
+}
+
+.upcoming-events .h2 span {
+    color: var(--black);
+}
+
+.events-slider {
+    overflow: hidden;
+    padding-top: 70px;
+}
+
+.events-slider .slick-list {
+    overflow: unset;
+}
+
+.events-slider .slick-slide {
+    padding: 0 20px;
+}
+
+.events-slider button.slick-arrow {
+    background-color: var(--white);
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.events-slider button.slick-arrow.slick-prev {
+    transform: rotate(180deg);
+    right: 80px;
+}
+
+.events-slider button.slick-arrow img {
+    width: 16px;
+    height: auto;
+}
+
+.events-slider .slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: clamp(30px, 3.646vw, 70px);
+}
+
+.events-slider .slick-dots li button {
+    border: 0;
+    outline: 0;
+    background-color: #d9d9d9;
+    width: 15px;
+    height: 15px;
+    font-size: 0px;
+    border-radius: 50%;
+}
+
+.events-slider .slick-dots li.slick-active button {
+    background-color: var(--light-pink);
+}
+
+.events-slider .event-details-box {
+    padding: 24px;
+    background-color: var(--white);
+    border-bottom: 5px solid var(--light-pink);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.251);
+}
+
+.events-slider .event-details-box .main-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 26px;
+}
+
+.events-slider .event-details-box .h6 {
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.events-slider .event-details-box ul li {
+    display: flex;
+    gap: 15px;
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.events-slider .event-details-box ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Upcoming events section end */
+
+/* list of cities section start */
+.list-of-cities {
+    padding: clamp(50px, 4.688vw, 90px) 0;
+    background-color: #F0F0F0;
+}
+
+.list-of-cities .main-heading {
+    margin-bottom: clamp(40px, 3.125vw, 60px);
+}
+
+.list-of-cities .main-heading .h2 {
+    margin-bottom: 30px;
+}
+
+.list-of-cities .main-heading p {
+    font-size: clamp(16px, 1.094vw, 21px);
+    line-height: 180%;
+}
+
+.list-of-cities .cities-name {
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.list-of-cities .cities-name ul {
+    width: calc(25% - (300px/4));
+    list-style-type: disc;
+    border-right: 1px solid #CECDCD;
+    padding-right: 20px;
+}
+
+.list-of-cities .cities-name ul:last-child {
+    border: 0;
+}
+
+.list-of-cities .cities-name ul li {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-family: var(--primary-font);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 210%;
+    color: var(--black);
+}
+
+/* list of cities section end */
+
+/* How to buy tickets section start */
+.how-to-buy-tickets {
+    padding: clamp(50px, 5vw, 96px) 0;
+}
+
+.how-to-buy-tickets .main-heading {
+    margin-bottom: clamp(40px, 4.167vw, 80px);
+    text-align: center;
+}
+
+.how-to-buy-tickets .main-heading>.h2 {
+    margin-bottom: 30px;
+}
+
+.how-to-buy-tickets .main-heading>p {
+    max-width: 677px;
+    margin: 0 auto;
+    font-size: clamp(16px, 1.146vw, 22px);
+    line-height: 180%;
+}
+
+.steps-to-buy-tickets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.steps-to-buy-tickets .steps {
+    width: calc(33.33% - (100px/3));
+    background-color: #F8F8F8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.251);
+    padding: 50px 26px 30px;
+    position: relative;
+    text-align: center;
+}
+
+.steps-to-buy-tickets .steps .h2 {
+    font-family: var(--primary-font);
+    color: #A6A5A2;
+    position: absolute;
+    left: 26px;
+    top: 26px;
+}
+
+.steps-to-buy-tickets .steps img {
+    width: 100%;
+    max-width: 85px;
+    height: auto;
+    margin: 0 auto 24px;
+}
+
+.steps-to-buy-tickets .steps .title {
+    font-family: var(--primary-font);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 180%;
+    margin-bottom: 16px;
+    color: var(--black);
+}
+
+.steps-to-buy-tickets .steps p {
+    font-size: clamp(16px, 0.99vw, 19px);
+    line-height: 210%;
+    color: var(--black);
+}
+
+.steps-to-buy-tickets .steps p a {
+    color: var(--yellow);
+    font-weight: 700;
+    border-bottom: 2px solid var(--yellow);
+    line-height: normal;
+}
+
+.steps-to-buy-tickets .steps p a:hover {
+    color: var(--light-pink);
+    border-color: var(--light-pink);
+}
+
+/* How to buy tickets section end */
+
+/* Need Tickets Banner section start */
+.need-tickets-banner {
+    padding: clamp(50px, 6.563vw, 126px) 0;
+    background-image: url(../images/banner-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.need-tickets-inner .h2 {
+    color: var(--white);
+    text-align: center;
+    margin-bottom: clamp(30px, 3.542vw, 68px);
+}
+
+.need-tickets-inner form {
+    position: relative;
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto 32px;
+}
+
+.need-tickets-inner form input {
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 30px;
+    padding: 24px 200px 24px 40px;
+    font-family: var(--secondary-font);
+    font-size: clamp(20px, 1.667vw, 32px);
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--black);
+    border: 0;
+}
+
+.need-tickets-inner form button {
+    border: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 24px;
+    font-size: clamp(20px, 1.458vw, 28px);
+    font-weight: 700;
+    border-radius: 30px;
+    transition: all 0.3s;
+    width: 100%;
+    max-width: 150px;
+}
+
+.need-tickets-inner .powered-by {
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: clamp(20px, 1.25vw, 24px);
+    font-weight: 700;
+    line-height: 175%;
+    color: var(--white);
+}
+
+.need-tickets-inner .powered-by a {
+    color: var(--light-pink);
+}
+
+.need-tickets-inner .powered-by a:hover {
+    color: var(--yellow);
+}
+
+/* Need Tickets Banner section end */
+
+/* Concerts Tickets section start */
+.concerts-tickets {
+    padding: clamp(50px, 6.563vw, 126px) 0 clamp(50px, 4.375vw, 84px);
+}
+
+.concerts-tickets-inner {
+    gap: 72px;
+}
+
+.concerts-tickets-inner .left-side {
+    width: 60%;
+    max-width: 740px;
+}
+
+.concerts-tickets-inner .left-side .h2 {
+    margin-bottom: clamp(30px, 2.5vw, 48px);
+    max-width: 670px;
+}
+
+.concerts-tickets-inner .left-side p {
+    font-size: clamp(16px, 1.042vw, 20px);
+    line-height: 210%;
+    margin-bottom: clamp(16px, 1.563vw, 30px);
+    text-transform: capitalize;
+}
+
+.concerts-tickets-inner .left-side p:last-child {
+    margin-bottom: 0;
+}
+
+.concerts-tickets-inner .right-side img {
+    width: 100%;
+    max-width: 675px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Concerts Tickets section end */
+
+/* Filter section start */
+.filter {
+    padding: 90px 0 clamp(50px, 4.688vw, 90px);
+    margin-top: 90px;
+    background-color: #FBFBFB;
+}
+
+.filter-sec {
+    padding: clamp(24px, 3.125vw, 60px) clamp(24px, 1.667vw, 32px);
+    margin-bottom: 48px;
+    background-color: var(--yellow);
+    margin-top: -180px;
+}
+
+.filter-sec form {
+    display: flex;
+    gap: 50px;
+}
+
+.filter-sec .custom-select {
+    position: relative;
+    width: 100%;
+    max-width: 475px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    line-height: 130%;
+    color: rgba(0, 0, 0, 0.67);
+}
+
+.filter-sec .select-selected {
+    width: 100%;
+    font-size: 24px;
+    padding: 24px 24px 24px 80px;
+    background-color: var(--white);
+    border-radius: 15px;
+    border: 0;
+    appearance: none;
+    background-image: url('../images/angle-down-solid.svg');
+    background-size: 20px;
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter-sec .custom-select::before {
+    position: absolute;
+    content: '';
+    background-size: 35px 35px;
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+}
+
+.filter-sec .custom-select.date::before {
+    background-image: url('../images/Calendar.svg');
+}
+
+.filter-sec .custom-select.city::before {
+    background-image: url('../images/map-2.svg');
+}
+
+.filter-sec .select-items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    width: 100%;
+}
+
+.filter-sec .select-items div {
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.filter-sec .select-items div:hover {
+    background-color: #f1f1f1;
+    border-radius: 15px;
+}
+
+.filter-sec .select-hide {
+    display: none;
+}
+
+.filter-list {
+    margin-bottom: 48px;
+}
+
+.filter-list:last-child,
+.filter-list .listing>li:last-child {
+    margin-bottom: 0;
+}
+
+.filter-list .title {
+    font-size: clamp(26px, 1.667vw, 32px);
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 28px;
+}
+
+.filter-list .listing>li {
+    margin-bottom: 30px;
+    border: 1px solid #CFCFCF;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.filter-list .listing li .date {
+    padding-right: 30px;
+}
+
+.filter-list .listing li .date p {
+    text-align: center;
+    font-size: clamp(38px, 2.813vw, 54px);
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.filter-list .listing li .date .days {
+    font-size: clamp(20px, 1.25vw, 24px);
+}
+
+.filter-list .listing li .details {
+    width: 100%;
+    padding-left: 30px;
+    gap: 20px;
+    border-left: 1px solid #D2CCCC;
+}
+
+.filter-list .listing li .details>div {
+    gap: 20px;
+}
+
+.filter-list .listing li .details .right-side {
+    align-items: end;
+}
+
+.filter-list .listing li .details .secondary-btn {
+    font-family: var(--primary-font);
+    font-size: clamp(18px, 1.25vw, 24px);
+    padding: 12px 20px;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: center;
+}
+
+.filter-list .listing li .details p {
+    font-size: clamp(24px, 1.719vw, 33px);
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--black);
+}
+
+.filter-list .listing li .details ul {
+    margin: 0 -20px;
+}
+
+.filter-list .listing li .details ul li {
+    font-family: var(--primary-font);
+    font-size: clamp(16px, 1.042vw, 20px);
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--text-color);
+    padding: 0 20px;
+    gap: 10px;
+    border-right: 1px solid var(--text-color);
+}
+
+.filter-list .listing li .details ul li:last-child {
+    border: 0;
+}
+
+.filter-list .listing li .details ul li img {
+    width: clamp(16px, 1.042vw, 20px);
+    height: clamp(16px, 1.042vw, 20px);
+    object-fit: cover;
+}
+
+/* Filter section end */
+
+/* Footer section start */
+footer {
+    background-color: #262626;
+}
+
+footer .copyright {
+    background-color: #313131;
+    text-align: center;
+    padding: clamp(24px, 1.771vw, 34px) 0;
+}
+
+footer .copyright p {
+    font-family: var(--secondary-font);
+    font-size: clamp(20px, 1.25vw, 24px);
+    font-weight: 300;
+    line-height: 130%;
+    color: var(--white);
+}
+
+footer .footer-top,
+footer .footer-top .social-icons ul {
+    gap: 30px;
+}
+
+footer .footer-top {
+    padding-bottom: clamp(30px, 2.604vw, 50px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.251);
+}
+
+footer .footer-top .social-icons ul li a img {
+    width: clamp(24px, 2.5vw, 48px);
+    height: clamp(24px, 2.5vw, 48px);
+    object-fit: scale-down;
+}
+
+footer .footer-top .logo a {
+    display: block;
+}
+
+footer .footer-top .logo img {
+    max-width: clamp(130px, 10.573vw, 203px);
+    height: auto;
+}
+
+footer .footer-bottom {
+    padding-top: 33px;
+    gap: 40px;
+}
+
+footer .footer-menu .h3 {
+    font-weight: 300;
+    color: var(--light-pink);
+    margin-bottom: 33px;
+}
+
+footer .footer-menu ul li {
+    margin-bottom: 25px;
+}
+
+footer .footer-menu ul li:last-child {
+    margin-bottom: 0;
+}
+
+footer .footer-menu ul li a,
+footer .footer-menu.address ul li {
+    font-family: var(--primary-font);
+    font-size: clamp(20px, 1.458vw, 28px);
+    font-weight: 300;
+    line-height: 120%;
+    color: var(--white);
+}
+
+footer .footer-menu ul li a:hover {
+    color: var(--yellow);
+}
+
+footer .footer-menu.address ul li {
+    display: flex;
+    gap: 25px;
+    line-height: 150%;
+    align-items: start;
+}
+
+footer .footer-menu.address ul li img {
+    width: 34px;
+    height: auto;
+}
+
+footer .footer-menu.address ul li:first-child img {
+    margin-top: 5px;
+}
+
+/* Footer section end */
+
+@media only screen and (max-width:1365px) {
+    .about-inner .left-side {
+        width: 70%;
+    }
+
+    .about-inner .right-side {
+        padding: 24px;
+    }
+
+    .about-inner .right-side .about-img::before,
+    .about-inner .right-side .about-img::after {
+        width: 180px;
+        height: 160px;
+    }
+
+    .about-inner .right-side .about-img::before {
+        right: -24px;
+        top: -24px;
+    }
+
+    .about-inner .right-side .about-img::after {
+        bottom: -24px;
+        left: -24px;
+    }
+
+    .list-of-cities .cities-name {
+        gap: 50px;
+    }
+
+    .list-of-cities .cities-name ul {
+        width: calc(25% - (150px/4));
+    }
+
+    .list-of-cities .cities-name ul li {
+        font-size: clamp(18px, 1.146vw, 22px);
+    }
+}
+
+@media only screen and (max-width:1199px) {
+
+    .about-inner,
+    .concerts-tickets-inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-inner .left-side,
+    .about-inner .left-side p,
+    .concerts-tickets-inner .left-side {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .steps-to-buy-tickets .steps {
+        width: calc(50% - 25px);
+    }
+
+    .concerts-tickets-inner .right-side img {
+        margin: 0;
+    }
+
+    .concerts-tickets-inner {
+        gap: 50px;
+    }
+
+    .filter {
+        margin-top: 70px;
+    }
+
+    .filter-sec {
+        margin-top: -160px;
+    }
+
+    .filter-sec .select-selected {
+        padding: 20px 20px 20px 72px;
+        font-size: 20px;
+    }
+
+    .filter-sec .select-items div {
+        padding: 8px 24px;
+        font-size: 18px;
+    }
+
+    .filter-sec .custom-select::before {
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .filter-list .listing li .details ul {
+        margin: 0;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .filter-list .listing li .details ul li {
+        padding: 0;
+        border: 0;
+        width: 100%;
+    }
+
+    .filter-list .listing li .details .right-side ul {
+        text-align: end;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .list-of-cities .cities-name ul {
+        width: calc(50% - 25px);
+    }
+
+    .list-of-cities .cities-name ul:nth-child(2n + 2) {
+        border-right: 0;
+    }
+
+    .steps-to-buy-tickets .steps img {
+        max-width: 60px;
+    }
+
+    .main-header nav ul,
+    .main-header nav {
+        gap: 30px;
+    }
+
+    .main-header nav ul li a,
+    .main-header .custom-btn a {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    header {
+        padding: 16px 0;
+    }
+
+    .main-header .logo img {
+        max-width: 130px;
+    }
+
+    .main-header .hamburger {
+        display: block !important;
+    }
+
+    .main-header nav {
+        flex-direction: column;
+        position: fixed;
+        left: 100%;
+        right: 0;
+        top: 87px;
+        height: calc(100vh - 87px);
+        background: var(--light-pink);
+        padding: 24px 16px;
+        align-items: self-start !important;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+    }
+
+    .main-header nav ul {
+        flex-direction: column;
+    }
+
+    .main-header nav ul li a {
+        color: var(--white);
+    }
+
+    .main-header .custom-btn a {
+        background-color: var(--yellow);
+    }
+
+    .show-menu {
+        overflow: hidden;
+    }
+
+    .show-menu .main-header nav {
+        left: 0;
+    }
+
+    .show-menu .main-header .hamburger span:nth-child(1) {
+        top: 8px;
+        transform: rotate(145deg);
+    }
+
+    .show-menu .main-header .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .show-menu .main-header .hamburger span:nth-child(3) {
+        top: 8px;
+        transform: rotate(-145deg);
+    }
+
+    .banner-inner .h1,
+    .banner-inner #countdown ul li span {
+        margin-bottom: 8px;
+    }
+
+    .about-inner .left-side p,
+    .about-inner .info-box .box .h6,
+    .about-inner .info-box .box ul li,
+    .list-of-cities .cities-name ul li,
+    .steps-to-buy-tickets .steps p,
+    .concerts-tickets-inner .left-side p {
+        line-height: 180%;
+    }
+
+    .about-inner .info-box .box {
+        width: 100%;
+    }
+
+    .list-of-cities .cities-name {
+        gap: 20px;
+    }
+
+    .list-of-cities .cities-name ul {
+        width: 100%;
+        border-right: 0;
+        padding: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #CECDCD;
+    }
+
+    .list-of-cities .cities-name ul:last-child {
+        padding-bottom: 0;
+    }
+
+    .steps-to-buy-tickets {
+        gap: 30px;
+    }
+
+    .steps-to-buy-tickets .steps {
+        width: 100%;
+    }
+
+    footer .footer-bottom {
+        flex-wrap: wrap;
+    }
+
+    footer .footer-bottom>div {
+        width: 100%;
+    }
+
+    footer .footer-menu .h3 {
+        margin-bottom: 24px;
+    }
+
+    footer .footer-menu ul li {
+        margin-bottom: 16px;
+    }
+
+    footer .footer-menu.address ul li {
+        gap: 16px;
+    }
+
+    footer .footer-menu.address ul li img {
+        width: 24px;
+    }
+
+    .upcoming-events .h2 {
+        padding-left: 10px;
+    }
+
+    .events-slider {
+        padding-top: 50px;
+    }
+
+    .events-slider .slick-slide {
+        padding: 0 10px;
+    }
+
+    .events-slider button.slick-arrow {
+        right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .events-slider button.slick-arrow.slick-prev {
+        right: 60px;
+    }
+
+    .events-slider button.slick-arrow img {
+        width: 10px;
+    }
+
+    .events-slider .slick-dots li button {
+        width: 10px;
+        height: 10px;
+    }
+
+    .need-tickets-inner form button {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .need-tickets-inner form input {
+        padding: 16px 24px;
+    }
+
+    .concerts-tickets-inner {
+        gap: 35px;
+    }
+
+    .filter-sec form {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .filter-list .listing>li {
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter-list .listing li .date {
+        padding: 0;
+        padding-bottom: 15px;
+    }
+
+    .filter-list .listing li .details {
+        padding: 0;
+        padding-top: 20px;
+        border: 0;
+        border-top: 1px solid #D2CCCC;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .filter-list .listing li .details>div,
+    .filter-list .listing li .details .secondary-btn {
+        width: 100%;
+    }
+
+    .filter-list .listing li .details .right-side ul {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .filter-list .listing li .details .right-side ul li {
+        width: auto;
+    }
+}
