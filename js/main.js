@@ -93,3 +93,13 @@ countdownToDate(userSelectedDate);
     }
   });
 });
+function scrollToSection(id) {
+    const targetElement = document.getElementById(id);
+
+    if (targetElement) {
+        targetElement.scrollIntoView({
+            behavior: 'smooth', // Smooth scroll
+            block: 'start'      // Aligns the element at the top of the viewport
+        });
+    }
+}
