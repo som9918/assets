@@ -99,7 +99,7 @@ function scrollToSection(id) {
     if (targetElement) {
         targetElement.scrollIntoView({
             behavior: 'smooth', // Smooth scroll
-            top: targetElement.offsetTop - 100,     // Aligns the element at the top of the viewport
+            top: targetElement.offsetTop - 200,     // Aligns the element at the top of the viewport
         });
     }
 }
