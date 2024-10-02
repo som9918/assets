@@ -43,8 +43,8 @@ countdownToDate(userSelectedDate);
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    prevArrow: `<button type="button" class="slick-prev"><img src="assets/images/arrow.svg" alt="Previous" /></button>`,
-    nextArrow: `<button type="button" class="slick-next"><img src="assets/images/arrow.svg" alt="Next" /></button>`,
+    prevArrow: `<button type="button" class="slick-prev"><img src="https://som9918.github.io/assets/images/arrow.svg" alt="Previous" /></button>`,
+    nextArrow: `<button type="button" class="slick-next"><img src="https://som9918.github.io/assets/images/arrow.svg" alt="Next" /></button>`,
     responsive: [
       {
         breakpoint: 1441,
